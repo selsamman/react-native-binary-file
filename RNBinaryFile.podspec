@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "author" => "Ez-Connect" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/ez-connect/react-native-binary-file.git", :tag => "master" }
-  s.source_files  = "RNBinaryFile/**/*.{h,m,swift}"
+  s.source_files  = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
 
