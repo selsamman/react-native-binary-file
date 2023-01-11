@@ -50,12 +50,15 @@ class RNBinaryFile: NSObject {
     if (handler != nil && len > 0) {
       let buffer = handler!.readData(ofLength: Int(len))
       if (buffer.count == len) {
+        /*
         let bytes = [UInt8](buffer)
         var value = [UInt8](repeating: 0, count: bytes.count)
         for i in 0 ..< bytes.count {
           value[i] = bytes[i].byteSwapped
         }
         resolve(value)
+         */
+          resolve(buffer);
         return
       }
     }
